@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"> </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--  Chapter 43-48 
+    Task 1 
+        <a href="" onclick="alert('Alert on Link')">Link</a> -->
+    <!-- Task 2
+        <table>
+            <tr>
+                <td> <img src="images/mobile image 1.jpg" alt="mobile image 1" onclick="alert('Thank You for Purchasing')"> </td>
+                <td> <img src="images/mobile image 2.jpg" alt="mobile image 2" onclick="alert('Thank You for Purchasing')"> </td>
+                <td> <img src="images/mobile image 3.jpg" alt="mobile image 3" onclick="alert('Thank You for Purchasing')"> </td>
+                <td> <img src="images/mobile image 4.jpg" alt="mobile image 4" onclick="alert('Thank You for Purchasing')"> </td>            </tr>
+        </table> -->
+        <!-- Task 3
+    <TABLE id = "inde_table">
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th></th>
+        <tr>
+            <td>  </td>
+            <td>Salim</td>
+            <td>3</td>
+            <td onclick="deleterow(this)"><button>Delete</button></td>
+        </tr>
+
+        </tr>
+        <tr>
+            <td>  </td>
+            <td>Sarim</td>
+            <td>5</td>
+            <td onclick="deleterow(this)"><button>Delete</button></td>
+        </tr>
+        <tr>
+            <td >  </td>
+            <td>Salik</td>
+            <td>11</td>
+            <td onclick="deleterow(this)"><button>Delete</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Sabbaar</td>
+            <td>12</td>
+            <td onclick="deleterow(this)"> <button>Delete</button> </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Salar</td>
+            <td>5</td>
+            <td onclick="deleterow(this)"> <button>Delete</button> </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Ibad</td>
+            <td>7</td>
+            <td onclick="deleterow(this)"> <button>Delete</button> </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Faizan</td>
+            <td>9</td>
+            <td onclick="deleterow(this)"> <button>Delete</button> </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Rehman</td>
+            <td>10</td>
+            <td onclick="deleterow(this)"> <button>Delete</button> </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Zeeshan</td>
+            <td>8</td>
+            <td onclick="deleterow(this)"> <button>Delete</button> </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Bilal</td>
+            <td>4</td>
+            <td onclick="deleterow(this)"> <button>Delete</button> </td>
+        </tr>
+    </TABLE>  -->
+    <!-- Task 4
+    <img src="images/mobile image 1.jpg" onmouseout="src= 'images/mobile image 1.jpg'" onmouseover="src = 'images/mobile image 2.jpg'" alt=""> -->
+    <!-- Task 5
+    <div>
+        <div id = "counter"></div>
+        <div><span> <button onclick="increase()" >Increase</button>  </span><span> <button onclick="decrease()" >Decrease</button> </span></div>
+    </div> -->
+
+    <!-- Chapter 49 - 52 -->
+    <!-- Task 1
+        <div>
+            <input type="text" placeholder="First Name" id="fName">
+            <input type="text" placeholder="Last Name" id="lName">
+        </div>
+        <div>
+            <input type="email" placeholder="email" id="email">
+            <input type="number" placeholder="Mobile Number" id="number" length = "11">
+        </div>
+        <div>
+            <input type="text" placeholder="Address Line 1" id="add1">
+            <input type="text" placeholder="Address Line 2" id="add2">
+        </div>
+        <div> <button onclick="sub()" >Submit</button> </div> -->
+    <!-- Task 2
+    <p id= "para">In previous assignment you have created a tabular data
+        using javascript. Let’s modify that.<br> Create a form which
+        takes student’s details and show each student detail in
+        table. <span onclick="fullpara()" style="color: blue; cursor: pointer;">read more</span> </p> -->
+    <!-- Task 3
+    <TABLE id = "inde_table">
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th></th>
+        <tr>
+            <td>  </td>
+            <td>Salim</td>
+            <td>3</td>
+            <td onclick="deleterows(this)"><button>Delete</button></td>
+            <td onclick=" unhid();edit(this);"><button>Edit</button></td>
+        </tr>
+
+        </tr>
+        <tr>
+            <td>  </td>
+            <td>Sarim</td>
+            <td>5</td>
+            <td onclick="deleterows(this)"><button>Delete</button></td>
+            <td onclick=" unhid();edit(this);"><button>Edit</button></td>
+        </tr>
+        <tr>
+            <td >  </td>
+            <td>Salik</td>
+            <td>11</td>
+            <td onclick="deleterows(this)"><button>Delete</button></td>
+            <td onclick=" unhid();edit(this);"><button>Edit</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Sabbaar</td>
+            <td>12</td>
+            <td onclick="deleterows(this)"><button>Delete</button></td>
+            <td onclick=" unhid();edit(this);"><button>Edit</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Salar</td>
+            <td>5</td>
+            <td onclick="deleterows(this)"><button>Delete</button></td>
+            <td onclick=" unhid();edit(this);"><button>Edit</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Ibad</td>
+            <td>7</td>
+            <td onclick="deleterows(this)"><button>Delete</button></td>
+            <td onclick=" unhid();edit(this);"><button>Edit</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Faizan</td>
+            <td>9</td>
+            <td onclick="deleterows(this)"><button>Delete</button></td>
+            <td onclick=" unhid();edit(this);"><button>Edit</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Rehman</td>
+            <td>10</td>
+            <td onclick="deleterows(this)"><button>Delete</button></td>
+            <td onclick=" unhid();edit(this);"><button>Edit</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Zeeshan</td>
+            <td>8</td>
+            <td onclick="deleterows(this)"><button>Delete</button></td>
+            <td onclick=" unhid();edit(this);"><button>Edit</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Bilal</td>
+            <td>4</td>
+            <td onclick="deleterows(this)"><button>Delete</button></td>
+            <td onclick=" unhid();edit(this);"><button>Edit</button></td>
+        </tr>
+    </TABLE> 
+    
+    <div id = "form">
+    <div id="inform"  >
+       <span>Name:</span> <input type="text" name="" id="name">
+       <span>Class:</span> <input type="text" name="" id="class">
+    <span>
+    <button style="text-align: center; display: block; margin-left: 35%; margin-top: 5%;" id="submit" onclick="hid(); change()">Submit</button>
+    </span>
+</div>
+</div>
+    
+     -->
+
+     <!-- Chapter 58-67
+     Task 1 & Task 2-->
+     <!-- <div>
+        <h1> DOM </h1>
+        <div id="form-content" class="content">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" />
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" />
+        <label for="emial">Email</label>
+        <input type="text" id="email" />
+        <button onclick="changer()">Submit</button>
+        </div>
+        <div id="main-content" class="content">
+        <p class="render" id="Firstname"> First Name : Alex</p>
+        <p class="render" id="Lastname">Last Name: Bank</p>
+        <p class="render" id= "Email"> Email : alexbank@example.com</p>
+        <p class="render"> Country : Pakistan </p>
+        <p class="render"> contact : +92 300 1234567</p>
+        </div>
+        </div> -->
+
+        
+    
+    
+</body>
+</html>
