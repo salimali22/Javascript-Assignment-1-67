@@ -27,15 +27,21 @@
             height: 100%;
             overflow: auto;
             background-color: rgba(0, 0, 0, 0.3);
+            text-align: center;
         }
-
+        img{
+            width:100px;
+            height: 300px;
+        }
         /* Modal Content (image) */
 
         .modal-content {
             margin: auto;
             display: block;
-            width: 80%;
-            max-width: 700px;
+            width: 50%;
+            max-width: 1000px;
+            height: 300px;
+
         }
 
         /* Add Animation - Zoom in the Modal */
@@ -99,10 +105,17 @@
     <div id="modal" class="modal">
         <span class="close" id="modal-close" onclick="onClosedImagModal()">&times;</span>
         <img class="modal-content" id="modal-img" src="">
+        <div>
+            <button onclick=zoomin(this)>
+                Zoom In
+            </button><button onclick="zoomout(this)">
+            Zoon out
+            </button>
+        </div>
     </div>
 
     <img src="" alt="Salar de Uyuni, Bolivia" id="1" style="width:100%;max-width:300px" onclick="onOpenImagModal(this)">
-    <img src="" alt="Cinque Terre, Rio Maggiore, Italy" id="2" style="width:100%;max-width:300px; height:200px;" onclick="onOpenImagModal(this)">
+    <img src="" alt="Cinque Terre, Rio Maggiore, Italy" id="2" style="width:100%;max-width:300px;" onclick="onOpenImagModal(this)">
     <img src="" alt="Blue Lagoon, Iceland" id="3" style="width:100%;max-width:300px" onclick="onOpenImagModal(this)">
     <img src="" alt="Maldives" id="4" style="width:100%;max-width:300px" onclick="onOpenImagModal(this)">
     <img src="" alt="Glass Beach, California, USA" id="5" style="width:100%;max-width:300px" onclick="onOpenImagModal(this)">

@@ -19,3 +19,74 @@ function onClosedImagModal(){
     modal.classList.add('modal-close');
     setTimeout(()=>{ modal.style.display = "none"; }, 550)
 }
+// function zoomin(a){
+//     var parent  = a.parentNode.parentNode;
+
+//     console.log(parent)
+
+//     var image = document.getElementById("modal-img")
+//     console.log(parent.getAttribute("id"))
+// console.log(parent.nodeName)
+// var myImg = parent.querySelector("#modal-img");
+// var currWidth = myImg.clientWidth;
+// var currHeight = myImg.clientHeight;
+// console.log(currHeight)
+// console.log(currWidth)
+// console.log(currHeight+=1)
+// console.log(currWidth+=1)
+// image.setAttribute("width",currWidth.toString()+"px")
+// image.setAttribute("height",currHeight.toString()+"px")
+// var currWidth = myImg.clientWidth;
+// var currHeight = myImg.clientHeight;
+// console.log(currHeight)
+// console.log(currWidth)
+// // console.log(parent.getElementsByTagName("img").getAttribute("height"))
+
+// }
+// function zoomout(a){
+//     var parent  = a.parentNode.parentNode;
+//     var image = document.getElementById("modal-img")
+//     console.log(parent)
+//     console.log(parent.nodeName)
+//     console.log(parent.getAttribute("id"))
+//     var myImg = parent.querySelector("#modal-img");
+//     var currWidth = myImg.clientWidth;
+//     var currHeight = myImg.clientHeight;
+//     console.log(currHeight)
+// console.log(currWidth)
+// console.log(currHeight-=1)
+// console.log(currWidth-=1)
+
+// image.setAttribute("width",currWidth.toString()+"px")
+// image.setAttribute("height",currHeight.toString()+"px")
+// var currWidth = myImg.clientWidth;
+// var currHeight = myImg.clientHeight;
+// console.log(currHeight)
+// console.log(currWidth)
+// // console.log(parent.getElementsByTagName("img").getAttribute("height"))
+
+// }
+
+function zoomin(){
+    var myImg = document.getElementById("modal-img");
+    var currHeight = myImg.clientHeight;
+    var currWidth = myImg.clientWidth;
+    if(currWidth >= 500 && currHeight >= 500){
+        alert("Maximum zoom-in level reached.");
+    } else{
+        myImg.style.width = (currWidth + 20) + "px";
+        myImg.style.height = (currWidth + 20) + "px";
+    } 
+    console.log(currHeight+20)
+}
+function zoomout(){
+    var myImg = document.getElementById("modal-img");
+    var currHeight = myImg.clientHeight;
+    var currWidth = myImg.clientWidth;
+    if(currWidth <= 150 && currHeight <= 150){
+        alert("Maximum zoom-out level reached.");
+    } else{
+        myImg.style.width = (currWidth - 20) + "px";
+        myImg.style.height = (currHeight - 20) + "px";
+    }
+}
